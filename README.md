@@ -18,17 +18,33 @@ We present TriBot, a multifunctional robot designed for:
 - Obstacle Avoidance – Smart autonomous navigation.
 
 ## Block Diagram
-[Smartphone App / Voice Input]
-          ↓
-      [Arduino UNO]
-          ↓
-[HC-05 Bluetooth Module] ←→ [Voice Recognition Module]
-          ↓
- [Ultrasonic Sensor (HC-SR04)]
-          ↓
-  [Motor Driver (L298N)]
-          ↓
-     [DC Motors + Chassis]
+### Smartphone App / Voice Input
+
+Provides control signals (via Bluetooth or voice commands)
+
+### Arduino UNO
+
+Central controller that processes input signals
+
+### HC-05 Bluetooth Module
+
+Enables wireless communication with the smartphone
+
+### Voice Recognition Module
+
+Interprets voice commands and sends them to Arduino
+
+### Ultrasonic Sensor (HC-SR04)
+
+Detects obstacles in the path of the vehicle
+
+### Motor Driver (L298N)
+
+Receives control signals from Arduino to drive the motors
+
+### DC Motors + Chassis
+
+Moves the robotic vehicle based on input commands and sensor data
 ## Results / Applications
 -Industrial Security – Remote monitoring in hazardous areas.
 
